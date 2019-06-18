@@ -703,3 +703,16 @@
       \letterenclosurestyle{\@letterenclname: \@letterenclosure} \\
     }
 }
+
+%-------------------------------------------------------------------------------
+%                Commands for elements of Multicolumns
+%-------------------------------------------------------------------------------
+\usepackage{multicol}
+\newcommand{\btwocol}{\begin{multicols}{2}}
+\newcommand{\etwocol}{\end{multicols}}
+
+\newcommand{\btricol}{\begin{multicols}{3}}
+\newcommand{\etricol}{\end{multicols}}
+
+\newcommand{\bquacol}{\begin{multicols}{4}}
+\newcommand{\equacol}{\end{multicols}}

@@ -1,6 +1,6 @@
 ---
 name: Jacob Rozran
-position: "Data Guy"
+position: "Data Scientist/Data Analyst/Data Engineer"
 address: "1400 Maryland Ave. Havertown, PA 19083"
 phone: (410) 231-9371
 www: www.jakelearnsdatascience.com
@@ -12,30 +12,58 @@ output: vitae::awesomecv
 ```{r setup, include=FALSE}
 library(tidyverse)
 library(vitae)
+library(VennDiagram)
+library(knitr)
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 ```
 
 # Summary
 
-To the second page, we will go!
+\btwocol
+I love to learn in general, but mostly I am a data fanatic - I love reading, writing, and learning about all things data: science, analysis, and visualizations. I turn data of all kinds into insight. 
+
+\begin{center}
+
+```{r, out.width = "50%"}
+venn.plot <- draw.triple.venn(
+        area1 = 65,
+        area2 = 75,
+        area3 = 85,
+        n12 = 35,
+        n23 = 15,
+        n13 = 25,
+        n123 = 5,
+        category = c("Data Skills", "Statistics", "Business Accumen"),
+        fill = c("#1d6ae5", "#b3c5e0", "#19396b"),
+        cat.cex = 1.5,
+        cat.col = c("#1d6ae5", "#b3c5e0", "#19396b"),
+        cex = c(0, 0, 0, 0, 0, 0, 0)
+)
+```
+
+\end{center}
+
+\etwocol
 
 # Data Science Skills
 
-## Methods
+\begin{center}
 
-* Tree-based machine learning, bootstrap sampling, forecasting, feature creation, process automation, regression analysis, data visualization, advanced analytics
+```{r, results = "asis"}
+df <- data.frame(a = c("Machine Learning", "Feature Creation", "Process Automation", 
+                       "Regression Analysis", "Data Visualization", 
+                       "Advanced Analytics"),
+                 b = c("RStudio", "Jupyter Notebooks", "Tableau", "Splunk",
+                       "Excel", ""),
+                 c = c("R", "Python", "Bash", "SAS", "", ""),
+                 d = c("Hive/Impala (Hadoop)", "MySQL", "Oracle", "MongoDB", 
+                       "Neo4J", "Teradata"))
 
-## Applications
+names(df) <- c("METHODS", "APPLICATIONS", "LANGUAGES", "DATABASES")
 
-* RStudio, Jupyter Notebooks, Excel, Tableau, Splunk
-
-## Languages
-
-* R, Python, Bash, SAS
-
-## Databases
-
-* Hive/Impala (Hadoop), MySQL, Oracle, MongoDB, Neo4J, Teradata
+kable(df, row.names = FALSE, "latex", booktabs = T)
+```
+\end{center}
 
 # Experience
 ```{r}
