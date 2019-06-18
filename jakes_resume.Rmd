@@ -26,34 +26,36 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Data Science
 
-* Forecasting, supervised Machine Learning, big data wrangling, process automation, Discrete Event Simulation, Regression analysis, data quality enhancement, data visualization
+* Tree-based machine learning, bootstrap sampling, forecasting, feature creation, process automation, regression analysis, data visualization, advanced analytics
 
 ## Applications
 
-* RStudio, SAS EG, SQL Server, Excel, Tableau
+* RStudio, Jupyter Notebooks, Excel, Tableau, Splunk
 
 ## Languages
 
-* R, SAS, SQL, VBA, Python (limited)
+* R, Python, Bash, SAS
 
-## Leadership
+## Databases
 
-* Former non-profit board member and president, presenting information to mid-size audience, mentorship of peers, explaining technical material to non-technical audience and management, oversight of interns
+* Hive/Impala (Hadoop), MySQL, Oracle, MongoDB, Neo4J, Teradata
 
 # Experience
 ```{r}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Data Scientist (contractor)", "Consumers Energy", "Jackson, MI", "Oct 2018 - Present", "Created new Customer Experience Index (CXi) automated reporting. I brought together transactions and survey responses from our web, call center and field channels from disparate sources and created the data architecture in SQL Server for storing the data. I developed code to calculate CXi across different levels of aggregation, create backups and automatically detect data quality issues.",
-  "Data Scientist (contractor)", "Consumers Energy", "Jackson, MI", "Oct 2018 - Present", "Development of speech analytics within Customer Operations utilizing Speechminer.",
-  "Data Scientist (contractor)", "Consumers Energy", "Jackson, MI", "Oct 2018 - Present", "Evaluated department's call center forecasting and provided recommended improvements in modeling methodology and benchmarking.",
-  "Data Scientist (contractor)", "Consumers Energy", "Jackson, MI", "Oct 2018 - Present", "Discovered and remediated many data quality issues, teaching the team best practices for ensuring quality and catching errors.",
-  "Pro bono analytics consultant","Impression 5 Science Center","Lansing, MI"," Nov 2018 - Present", "Helping I5 calculate its member retention rate and then study and strategize how to improve and optimize its member renewal strategies.",
-  "Sr Operations Business Process Analyst", "Jackson National Life", "Lansing, MI", "Mar 2012 - Sep 2018", "Learned and implemented machine learning and statistical processes, including: anomaly detection, force-directed network visualization, logistic regression, exponential smoothing, unobserved component models, automatic dimension reduction and variable selection, text mining, decision trees and fuzzy matching.",
-  "Sr Operations Business Process Analyst", "Jackson National Life", "Lansing, MI", "Mar 2012 - Sep 2018", "Created automated forecasting system with semi-supervised machine learning umbrella to automate model parameterization. Forecasts are generated using Unobserved Component Modeling implemented with SAS PROC UCM.",
-   "Sr Operations Business Process Analyst", "Jackson National Life", "Lansing, MI", "Mar 2012 - Sep 2018", "Connected to and queried directly from production DB2 databases using SAS SQL.",
-   "Sr Operations Business Process Analyst", "Jackson National Life", "Lansing, MI", "Mar 2012 - Sep 2018", "Used discrete event simulation (R's simmer package) to predict the effect of various staffing strategies on Operations KPIs.",
-    "Intern, Pricing and Promotion Analytics", "Kellogg's", "Battle Creek, MI", "May 2011 - Mar 2012", "Contributed to Kellogg's marketing and sales strategies, including optimal feature price, display partners and expected promotion lift."
+  "Manager of Data Analytics", "Comcast", "Philadelphia, PA", "Mar 2017 - Present", "Lead and manage the data analytics and engineering team for Xfinity Mobile Credit Risk Management, including hiring and training of staff analysts and engineers, collaborating with and providing analysis for stakeholders, and tracking and prioritizing all team tasking.",
+  "Manager of Data Analytics", "Comcast", "Philadelphia, PA", "Mar 2017 - Present", "Designed and built a fraud decision making tool that combines custom feature creation, statistical and business rules, and predictive models built in R, Python, and Bash, which, in large part, is responsible for a decrease in month-over-month fraud losses by 92% in 2018.",
+  "Manager of Data Analytics", "Comcast", "Philadelphia, PA", "Mar 2017 - Present", "Forecast involuntary churn (both bad debt and unit loss) for the organization on the numerous segments of our customer base.",
+  "Manager of Data Analytics", "Comcast", "Philadelphia, PA", "Mar 2017 - Present", "Built and maintain numerous Tableau and Splunk dashboards representing fraud and credit to the organization.",
+  "Manager of Data Analytics", "Comcast", "Philadelphia, PA", "Mar 2017 - Present", "Provide coaching, leadership, and mentorship to all analysts on the Xfinity Mobile Risk Management team.",
+  "Senior Data Analyst", "Comcast", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Designed and built predictive models, which improved compromised user account detection times and discovery accuracy, for the Internet Services Engineering Analytics team – this work was presented internally along with several internal blog posts about the effort.", 
+  "Senior Data Analyst", "Comcast", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Used statistical methods to discover and automate the detection of anomalies.", 
+  "Senior Data Analyst", "Comcast", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Created forecasts of user base growth and project completion.", 
+  "Project Manager", "Comcast", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Served as a Project Manager and ScrumMaster for the Messaging Application Engineering (MAE) team, responsible for Residential Voicemail and Email Engineering teams.",
+  "Project Manager", "Comcast", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Obtained my Project Management Professional (PMP) and Certified ScrumMaster (CSM) certifications during my tenure as PM for the Messaging team.",
+  "Implementation Manager", "Booz Allen Hamilton", "Rockville, MD", "Nov 2010 - Apr 2013", "Served as the Implementation Manager and Site Administrator for the National Children’s Study (NCS) Portal, a Microsoft SharePoint 2010 web application, the NCS Application Homepage, and NCS Password Self Service.",
+  "Financial Analyst/Project Manager", "Booz Allen Hamilton", "Lexington Park, MD", "Nov 2009 - Oct 2010", "Developed a financial tracking system for client, which allowed key stakeholders to view current and projected funding over the lifetime of the contract."
  ) %>% 
   detailed_entries(role, dates, company, loc, details)
 ```
@@ -62,12 +64,10 @@ tribble(
 # Education
 ```{r}
 tribble(
-  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
-  "MA, Economics", "Central Michigan University", "Mount Pleasant, MI", "2010 - 2012","Research Assistant for two professors",
-   "MA, Economics", "Central Michigan University", "Mount Pleasant, MI", "2010 - 2012","Taught undergraduate Microeconomics",
-   "MA, Economics", "Central Michigan University", "Mount Pleasant, MI", "2010 - 2012","Master's paper: Fare or Foul: The effects of public transit fare increases on auto fatalities",
-  "BS, Business", "University of North Carolina", "Chapel Hill, NC", "2002 - 2006","Minor: Anthropology"
+  ~ degree, ~ uni, ~ loc, ~ dates,
+  "MS, Applied Statistics", "Villanova University", "Villanova, PA", "2015 - 2017",
+  "BS, Business & Engineering", "Drexel University", "Philadelphia, PA", "2004 - 2009"
 ) %>% 
-  detailed_entries(degree, dates, uni, loc, details)
+  detailed_entries(degree, dates, uni, loc)
 ```
 
