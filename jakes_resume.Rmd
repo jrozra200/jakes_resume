@@ -60,6 +60,7 @@ tribble(
   detailed_entries(role, dates, company, loc, details)
 ```
 
+\makecvfooter{`r format(Sys.time(), '%B %Y')`}{Jacob Rozran}{1}
 \newpage 
 
 ```{r}
@@ -97,4 +98,6 @@ tribble(
 ) %>% 
   detailed_entries(degree, dates, uni, loc)
 ```
+
+\makecvfooter{`r format(Sys.time(), '%B %Y')`}{Jacob Rozran}{2}
 
