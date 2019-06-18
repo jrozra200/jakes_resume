@@ -2,12 +2,9 @@
 name: Jacob Rozran
 position: "Data Scientist/Data Analyst/Data Engineer"
 address: "1400 Maryland Ave. Havertown, PA 19083"
-phone: +1 410 231 9371
+phone: (410) 231-9371
 www: www.jakelearnsdatascience.com
 email: "jacob.rozran@gmail.com"
-twitter: rozran00
-github: jrozra200
-linkedin: jacob-rozran-884580b
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::awesomecv
 ---
@@ -18,13 +15,13 @@ library(vitae)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-<!-- # Professional Goal -->
+# Summary
 
-<!-- GOAL TEXT WOULD GO HERE -->
+To the second page, we will go!
 
-# Skills
+# Data Science Skills
 
-## Data Science
+## Methods
 
 * Tree-based machine learning, bootstrap sampling, forecasting, feature creation, process automation, regression analysis, data visualization, advanced analytics
 
@@ -48,13 +45,41 @@ tribble(
   "Manager of Data Analytics", "Comcast", "Philadelphia, PA", "Mar 2017 - Present", "Designed and built a fraud decision making tool that combines custom feature creation, statistical and business rules, and predictive models built in R, Python, and Bash, which, in large part, is responsible for a decrease in month-over-month fraud losses by 92% in 2018.",
   "Manager of Data Analytics", "Comcast", "Philadelphia, PA", "Mar 2017 - Present", "Forecast involuntary churn (both bad debt and unit loss) for the organization on the numerous segments of our customer base.",
   "Manager of Data Analytics", "Comcast", "Philadelphia, PA", "Mar 2017 - Present", "Built and maintain numerous Tableau and Splunk dashboards representing fraud and credit to the organization.",
-  "Manager of Data Analytics", "Comcast", "Philadelphia, PA", "Mar 2017 - Present", "Provide coaching, leadership, and mentorship to all analysts on the Xfinity Mobile Risk Management team.",
+  "Manager of Data Analytics", "Comcast", "Philadelphia, PA", "Mar 2017 - Present", "Provide coaching, leadership, and mentorship to all analysts on the Xfinity Mobile Risk Management team."
+ ) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
   "Senior Data Analyst", "Comcast", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Designed and built predictive models, which improved compromised user account detection times and discovery accuracy, for the Internet Services Engineering Analytics team – this work was presented internally along with several internal blog posts about the effort.", 
   "Senior Data Analyst", "Comcast", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Used statistical methods to discover and automate the detection of anomalies.", 
-  "Senior Data Analyst", "Comcast", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Created forecasts of user base growth and project completion.", 
+  "Senior Data Analyst", "Comcast", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Created forecasts of user base growth and project completion."
+ ) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
   "Project Manager", "Comcast", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Served as a Project Manager and ScrumMaster for the Messaging Application Engineering (MAE) team, responsible for Residential Voicemail and Email Engineering teams.",
-  "Project Manager", "Comcast", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Obtained my Project Management Professional (PMP) and Certified ScrumMaster (CSM) certifications during my tenure as PM for the Messaging team.",
-  "Implementation Manager", "Booz Allen Hamilton", "Rockville, MD", "Nov 2010 - Apr 2013", "Served as the Implementation Manager and Site Administrator for the National Children’s Study (NCS) Portal, a Microsoft SharePoint 2010 web application, the NCS Application Homepage, and NCS Password Self Service.",
+  "Project Manager", "Comcast", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Obtained my Project Management Professional (PMP) and Certified ScrumMaster (CSM) certifications during my tenure as PM for the Messaging team."
+ ) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Implementation Manager", "Booz Allen Hamilton", "Rockville, MD", "Nov 2010 - Apr 2013", "Served as the Implementation Manager and Site Administrator for the National Children’s Study (NCS) Portal, a Microsoft SharePoint 2010 web application, the NCS Application Homepage, and NCS Password Self Service."
+ ) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
   "Financial Analyst/Project Manager", "Booz Allen Hamilton", "Lexington Park, MD", "Nov 2009 - Oct 2010", "Developed a financial tracking system for client, which allowed key stakeholders to view current and projected funding over the lifetime of the contract."
  ) %>% 
   detailed_entries(role, dates, company, loc, details)
