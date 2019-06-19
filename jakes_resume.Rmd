@@ -126,6 +126,13 @@ tribble(
 ```{r}
 tribble(
         ~ role, ~ company, ~ loc, ~ dates, ~ details,
+        "Organizer", "Data Jawn Conference", "Philadelphia, PA", "April 2019 - Present", "Assisted in promotion, speaker selection, and day-of-event logistics for the Data Jawn, a Philadelphia data conference highlighting the great work of our local data commnuity."
+        ) %>% detailed_entries(role, dates, company, loc, details)
+```
+
+```{r}
+tribble(
+        ~ role, ~ company, ~ loc, ~ dates, ~ details,
         "Data Analyst", "Montgomery County Public Defender", "Norristown, PA", "May 2016 - Jun 2017", "Assisted Montgomery County Public Defender to define an analytics strategy to support competitive salaries and fair defence for all Montgomery County residents.",
         "Data Analyst", "Montgomery County Public Defender", "Norristown, PA", "May 2016 - Jun 2017", "Created, built, and maintained advanced analysis."
         ) %>% detailed_entries(role, dates, company, loc, details)
