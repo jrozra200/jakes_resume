@@ -77,10 +77,10 @@ tribble(
 ```{r}
 tribble(
         ~ role, ~ company, ~ loc, ~ dates, ~ details,
-        "Project Manager", "Messaging Application Engineering (Comcast)", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Served as a Project Manager and ScrumMaster for the Messaging Application Engineering (MAE) team.",
-        "Project Manager", "Messaging Application Engineering (Comcast)", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Managed the scheduling and owned the priorities for multiple work streams and teams.",
-        "Project Manager", "Messaging Application Engineering (Comcast)", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Instituted and evangelized Scrum on both the email and voicemail teams, which led to higher team productivity, better communication across teams from development through deployment to production, and improved interaction with our product owners.",
-        "Project Manager", "Messaging Application Engineering (Comcast)", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Obtained my Project Management Professional (PMP) and Certified ScrumMaster (CSM) certifications."
+        "Project Manager", "Messaging Application Engineering (Comcast)", "Philadelphia, PA", "Apr 2013 - Sep 2014", "Served as a Project Manager and ScrumMaster for the Messaging Application Engineering (MAE) team.",
+        "Project Manager", "Messaging Application Engineering (Comcast)", "Philadelphia, PA", "Apr 2013 - Sep 2014", "Managed the scheduling and owned the priorities for multiple work streams and teams.",
+        "Project Manager", "Messaging Application Engineering (Comcast)", "Philadelphia, PA", "Apr 2013 - Sep 2014", "Instituted and evangelized Scrum on both the email and voicemail teams, which led to higher team productivity, better communication across teams from development through deployment to production, and improved interaction with our product owners.",
+        "Project Manager", "Messaging Application Engineering (Comcast)", "Philadelphia, PA", "Apr 2013 - Sep 2014", "Obtained my Project Management Professional (PMP) and Certified ScrumMaster (CSM) certifications."
         ) %>% detailed_entries(role, dates, company, loc, details)
 ```
 
@@ -126,15 +126,14 @@ tribble(
 ```{r}
 tribble(
         ~ role, ~ company, ~ loc, ~ dates, ~ details,
-        "Organizer", "Data Jawn Conference", "Philadelphia, PA", "April 2019 - Present", "Assisted in promotion, speaker selection, and day-of-event logistics for the Data Jawn, a Philadelphia data conference highlighting the great work of our local data commnuity."
+        "Organizer", "Data Jawn Conference", "Philadelphia, PA", "Apr 2019 - Present", "Assisted in promotion, speaker selection, and day-of-event logistics for the Data Jawn, a Philadelphia data conference highlighting the great work of our local data commnuity."
         ) %>% detailed_entries(role, dates, company, loc, details)
 ```
 
 ```{r}
 tribble(
         ~ role, ~ company, ~ loc, ~ dates, ~ details,
-        "Data Analyst", "Montgomery County Public Defender", "Norristown, PA", "May 2016 - Jun 2017", "Assisted Montgomery County Public Defender to define an analytics strategy to support competitive salaries and fair defence for all Montgomery County residents.",
-        "Data Analyst", "Montgomery County Public Defender", "Norristown, PA", "May 2016 - Jun 2017", "Created, built, and maintained advanced analysis."
+        "Data Analyst", "Montgomery County Public Defender", "Norristown, PA", "May 2016 - Jun 2017", "Assisted Montgomery County Public Defender to define an analytics strategy to support competitive salaries and fair defence for all Montgomery County residents."
         ) %>% detailed_entries(role, dates, company, loc, details)
 ```
 
