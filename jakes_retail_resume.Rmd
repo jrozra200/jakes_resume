@@ -57,30 +57,30 @@ venn.plot <- draw.triple.venn(
 tribble(
         ~ role, ~ company, ~ loc, ~ dates, ~ details,
         "Manager of Data Analytics", "Xfinity Mobile Risk Management (Comcast)", "Philadelphia, PA", "Mar 2017 - Present", "Lead and manage the data analytics and engineering team for Xfinity Mobile Credit Risk Management, including hiring and training of staff analysts and engineers, collaborating with and providing analysis for stakeholders, and tracking and prioritizing all team tasking.",
-        "Manager of Data Analytics", "Xfinity Mobile Risk Management (Comcast)", "Philadelphia, PA", "Mar 2017 - Present", "Designed and built a fraud decision making tool that combines custom feature creation, statistical and business rules, and predictive models built in R, Python, and Bash, which, in large part, is responsible for a decrease in month-over-month fraud losses by 92% in 2018.",
-        "Manager of Data Analytics", "Xfinity Mobile Risk Management (Comcast)", "Philadelphia, PA", "Mar 2017 - Present", "Forecast involuntary churn (both bad debt and unit loss) for the organization on the numerous segments of our customer base.",
-        "Manager of Data Analytics", "Xfinity Mobile Risk Management (Comcast)", "Philadelphia, PA", "Mar 2017 - Present", "Built and maintain numerous Tableau and Splunk dashboards representing fraud and credit to the organization.",
-        "Manager of Data Analytics", "Xfinity Mobile Risk Management (Comcast)", "Philadelphia, PA", "Mar 2017 - Present", "Provide coaching, leadership, and mentorship to all analysts on the Xfinity Mobile Risk Management team."
+        "Manager of Data Analytics", "Xfinity Mobile Risk Management (Comcast)", "Philadelphia, PA", "Mar 2017 - Present", "Build and maintain relationships across the organization - our decisions, though data driven, are nothing without the understanding and buy-in from our partners in Product, Marketing, Finance, Care, Logistics, and Project Management.",
+        "Manager of Data Analytics", "Xfinity Mobile Risk Management (Comcast)", "Philadelphia, PA", "Mar 2017 - Present", "Provide coaching, leadership, and mentorship to all analysts on the Xfinity Mobile Risk Management team.",
+        "Manager of Data Analytics", "Xfinity Mobile Risk Management (Comcast)", "Philadelphia, PA", "Mar 2017 - Present", "Designed and built a fraud decision making tool that is responsible for a decrease in month-over-month fraud losses by 92% in 2018.",
+        "Manager of Data Analytics", "Xfinity Mobile Risk Management (Comcast)", "Philadelphia, PA", "Mar 2017 - Present", "Forecast involuntary churn (both bad debt and unit loss) for the organization on the numerous segments of our customer base."
         ) %>% detailed_entries(role, dates, company, loc, details)
 ```
 
 ```{r}
 tribble(
         ~ role, ~ company, ~ loc, ~ dates, ~ details,
-        "Senior Data Analyst", "Internet Services Engineering (Comcast)", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Designed and built predictive models, which improved compromised user account detection times and discovery accuracy – this work was presented internally along with several internal blog posts about the effort.", 
+        "Senior Data Analyst", "Internet Services Engineering (Comcast)", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Led a team of analysts responsible for detecting and investigating anomalies in the Xfinity Connect email platform - always striving to improve the customer experience.",
+        "Senior Data Analyst", "Internet Services Engineering (Comcast)", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Designed and built predictive models, which improved compromised user account detection times and discovery accuracy.", 
         "Senior Data Analyst", "Internet Services Engineering (Comcast)", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Used statistical methods to discover and automate the detection of anomalies.", 
-        "Senior Data Analyst", "Internet Services Engineering (Comcast)", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Created forecasts of user base growth and project completion.",
-        "Senior Data Analyst", "Internet Services Engineering (Comcast)", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Maintained and monitored KPIs for multiple application teams within the organization."
+        "Senior Data Analyst", "Internet Services Engineering (Comcast)", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Created forecasts of user base growth and project completion."
         ) %>% detailed_entries(role, dates, company, loc, details)
 ```
 
 ```{r}
 tribble(
         ~ role, ~ company, ~ loc, ~ dates, ~ details,
-        "Project Manager", "Messaging Application Engineering (Comcast)", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Served as a Project Manager and ScrumMaster for the Messaging Application Engineering (MAE) team, responsible for Residential Voicemail and Email Engineering teams.",
-        "Project Manager", "Messaging Application Engineering (Comcast)", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Obtained my Project Management Professional (PMP) and Certified ScrumMaster (CSM) certifications.",
-        "Project Manager", "Messaging Application Engineering (Comcast)", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Instituted and evangelized Scrum on both the email and voicemail teams, migrating from a hybrid of waterfall and Kanban, which led to higher team productivity, better communication across teams from development through deployment to production, and improved interaction with our product owners.",
-        "Project Manager", "Messaging Application Engineering (Comcast)", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Managed the scheduling and owned the priorities for multiple work streams and teams."
+        "Project Manager", "Messaging Application Engineering (Comcast)", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Served as a Project Manager and ScrumMaster for the Messaging Application Engineering (MAE) team.",
+        "Project Manager", "Messaging Application Engineering (Comcast)", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Managed the scheduling and owned the priorities for multiple work streams and teams.",
+        "Project Manager", "Messaging Application Engineering (Comcast)", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Instituted and evangelized Scrum on both the email and voicemail teams, which led to higher team productivity, better communication across teams from development through deployment to production, and improved interaction with our product owners.",
+        "Project Manager", "Messaging Application Engineering (Comcast)", "Philadelphia, PA", "Sep 2014 - Mar 2017", "Obtained my Project Management Professional (PMP) and Certified ScrumMaster (CSM) certifications."
         ) %>% detailed_entries(role, dates, company, loc, details)
 ```
 
