@@ -21,8 +21,10 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 
 \btwocol
 I am a data professional who has real-world experience putting data products 
-into production. I am curious and constantly learning and improving - staying up 
-to date with trends in all facets of the data science lifecycle. 
+into production and building data teams. I am curious and constantly learning 
+and improving - staying up to date with trends in all facets of the data science 
+life cycle. Additionally, I am an Adjunct Professor of Statistics who excels at 
+teaching complex topics at all levels of understanding.
 
 I love to learn in general, but mostly I am a data fanatic. I love reading, 
 writing, and learning about all things data science, analysis, and 
@@ -39,7 +41,7 @@ venn.plot <- draw.triple.venn(
         n23 = 15,
         n13 = 25,
         n123 = 5,
-        category = c("Data Skills", "Statistics", "Project Managment"),
+        category = c("Data Skills", "Statistics", "Leadership"),
         fill = c("#1d6ae5", "#b3c5e0", "#19396b"),
         cat.cex = 1.5,
         cat.col = c("#1d6ae5", "#b3c5e0", "#19396b"),
